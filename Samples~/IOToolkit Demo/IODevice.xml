@@ -1,0 +1,33 @@
+<!--
+  Copyright (c) mrma617@gmail.com
+  Author: MrBaoquan
+  CreateTime: 2018-5-16 9:10
+-->
+
+<IORoot>
+
+  <Device Name="extDev" Type="External" DllName="DEBUGGER" Index="0">
+
+    <!-- 开关量 示例 -->
+    <Action Name="ToggleLight">
+      <Key Name="S" />
+      <Key Name="Button_00" />
+    </Action>
+
+
+    <!-- Axis 模拟量输入 灯光亮度-->
+    <Axis Name="Brightness">
+      <Key Name="Axis_00" Scale="1000" />
+      <Key Name="Axis_01" Scale="500" />
+    </Axis>
+
+    <!-- 输出示例 -->
+    <OAction Name="Light">
+      <Key Name="OAxis_01" />
+      <Key Name="OAxis_02" />
+    </OAction>
+
+
+  </Device>
+
+</IORoot>

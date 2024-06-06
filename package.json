@@ -1,0 +1,21 @@
+{
+  "displayName": "IO Toolkit",
+  "name": "com.parful.iotoolkit",
+  "version": "2.1.1",
+  "unity": "2019.1",
+  "description": "IOToolkit For Unity, \r\n 抹平IO设备交互的接口 \r\n 支持众多板卡/雷达/Joystick/MODBUS协议等设备",
+  "author": {
+    "name": "MrBaoquan",
+    "email": "mrma617@gmail.com"
+  },
+  "documentationUrl":"https://parful.gitbook.io/iotoolkit-docs",
+  "category": "tools",
+	"dependencies": {},
+  "samples": [
+    {
+      "displayName":"IOToolkit Demo",
+      "description":"演示了IO输入事件绑定, IO输出等基本功能",
+      "path":"Samples~/IOToolkit Demo"
+    }
+  ]
+}

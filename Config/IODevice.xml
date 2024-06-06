@@ -1,0 +1,18 @@
+<!--
+  Copyright (c) mrma617@gmail.com
+  Author: MrBaoquan
+  CreateTime: 2018-5-16 9:10
+-->
+
+<IORoot>
+
+  <Device Name="extDev" Type="External" DllName="IOUI" Index="0">
+
+    <Action Name="StartGame">
+      <Key Name="S" />
+      <Key Name="Button_00" />
+    </Action>
+
+  </Device>
+
+</IORoot>
