@@ -14,11 +14,22 @@ public class IOToolkitPlugin
         if (Directory.Exists(Path.Combine(Application.dataPath, "Plugins/IOToolkit")))
             return;
 
+        ImportIOToolkit(false);
+    }
+
+    [MenuItem("Tools/IOToolkit/Reimport", priority = 101)]
+    static void Reimport()
+    {
+        ImportIOToolkit(true);
+    }
+
+    public static void ImportIOToolkit(bool interactive)
+    {
         AssetDatabase.importPackageCompleted += OnImportPackageCompleted;
         AssetDatabase.importPackageFailed += OnImportPackageFailed;
         AssetDatabase.ImportPackage(
             "Packages/com.parful.iotoolkit/Assets/IOToolkit.unitypackage",
-            false
+            interactive
         );
     }
 
