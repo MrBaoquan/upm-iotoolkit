@@ -1,4 +1,7 @@
 ### 更新日志
+v2.2.7
+ - Modbus 优化逻辑控制，全部使用异步，支持多设备
+  
 v2.2.6
  - SerialPort 重命名为Serial-IOFE & 修复波特率配置bug
   
